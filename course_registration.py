@@ -36,7 +36,7 @@ service = Service(executable_path='./chromedriver')
 
 # Create Chrome options to avoid "selenium is being controlled by automated test software" notification
 chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--headless=new")
 chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 # Disable password manager
 prefs = {"credentials_enable_service": False, "profile.password_manager_enabled": False}
